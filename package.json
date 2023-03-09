@@ -1,0 +1,23 @@
+{
+  "name": "mysql-bigint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjuni/mysql-bigint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imjuni/mysql-bigint/issues"
+  },
+  "homepage": "https://github.com/imjuni/mysql-bigint#readme",
+  "dependencies": {
+    "mysql2": "^3.2.0"
+  }
+}
