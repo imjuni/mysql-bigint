@@ -25,8 +25,8 @@ const handler = async () => {
     "black panther",
   ]);
 
-  console.log(r1);
-  console.log(r2);
+  console.log("r1: ", r1);
+  console.log("r2: ", r2);
 
   conn.end();
 };

@@ -16,7 +16,10 @@ const handler = async () => {
   });
 
   // create test table
-  const [r1, _fields] = await conn.execute(selectData, ["36028797018963970"]);
+  const [r1, _fields] = await conn.execute(selectData, [
+    "marvel",
+    "36028797018963970",
+  ]);
 
   console.log(r1);
 
