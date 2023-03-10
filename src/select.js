@@ -1,6 +1,7 @@
 // create database if not exists biginttest;
 
 const mysql = require("mysql2/promise");
+const { raw } = require("mysql2");
 
 const selectData = `SELECT * FROM super_hero WHERE kind = ? and property > ?`;
 
@@ -16,9 +17,9 @@ const handler = async () => {
   });
 
   // create test table
-  const [r1, _fields] = await conn.execute(selectData, [
+  const [r1, _fields] = await conn.query(selectData, [
     "marvel",
-    "36028797018963970",
+    raw("1152921504606847000"),
   ]);
 
   console.log(r1);

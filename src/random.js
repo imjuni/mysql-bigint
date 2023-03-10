@@ -36,6 +36,12 @@ const handler = async () => {
     ]);
   }
 
+  await conn.query(insertData, [
+    `0`,
+    kinds[faker.random.numeric(10) % 2],
+    faker.name.fullName(),
+  ]);
+
   conn.end();
 };
 
