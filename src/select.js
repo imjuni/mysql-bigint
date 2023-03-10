@@ -2,7 +2,7 @@
 
 const mysql = require("mysql2/promise");
 
-const selectData = `SELECT * FROM super_hero WHERE property = ?`;
+const selectData = `SELECT * FROM super_hero WHERE kind = ? and property > ?`;
 
 const handler = async () => {
   const conn = await mysql.createConnection({

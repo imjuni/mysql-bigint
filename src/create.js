@@ -6,9 +6,11 @@ const createTable = `
 CREATE TABLE IF NOT EXISTS \`super_hero\` (
   \`id\` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   \`property\` bigint(20) NOT NULL,
+  \`kind\` char(10) NOT NULL,
   \`name\` varchar(200) NOT NULL,
   primary key (\`id\`),
-  key \`idx_id_property\` (\`id\`, \`property\`)
+  key \`idx_property\` (\`property\`),
+  key \`idx_kind_property\` (\`kind\`, \`property\`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
 `;
 
